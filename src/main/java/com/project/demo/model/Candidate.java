@@ -16,6 +16,7 @@ import java.util.Set;
 @Getter
 @Setter
 @Entity
+@NoArgsConstructor
 public class Candidate {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -41,7 +42,5 @@ public class Candidate {
 //    @JsonIgnoreProperties("candidates")
 //    @JsonFormat(with = JsonFormat.Feature.ACCEPT_SINGLE_VALUE_AS_ARRAY)
     private List<Skill> skills;
-
-    private Candidate(){}
 
 }
