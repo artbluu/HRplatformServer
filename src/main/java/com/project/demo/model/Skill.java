@@ -11,6 +11,7 @@ import java.util.Set;
 @Getter
 @Setter
 @Entity
+@NoArgsConstructor
 public class Skill {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -20,6 +21,5 @@ public class Skill {
     @ManyToMany(mappedBy = "skills")
     @JsonIgnoreProperties("skills")
     private List<Candidate> candidates;
-    private Skill(){}
 
 }
