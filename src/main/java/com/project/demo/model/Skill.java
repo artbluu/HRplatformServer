@@ -20,6 +20,6 @@ public class Skill {
     @ManyToMany(mappedBy = "skills")
     @JsonIgnoreProperties("skills")
     private List<Candidate> candidates;
-    public Skill(){}
+    private Skill(){}
 
 }
